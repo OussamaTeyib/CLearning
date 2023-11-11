@@ -2,24 +2,27 @@ Setting up C development environement:
 
 1. Download cmder
 	*- Download the full version from here: https://cmder.app/
-        *- Extract the .rar file and run cmder.exe
+	*- Extract the .rar file and run cmder.exe
 	*- To set the startup directory:
 	 -- Open the settings (Shortcut: Win+Alt+P)
-         -- In Settings window, navigate to 'start-up > tasks'
+	 -- In Settings window, navigate to 'start-up > tasks'
 	 -- Click on {cmd::Cmder} in 'Predefined tasks' section
-         -- Click on 'Startup dir' and choose the directory
+	 -- Click on 'Startup dir' and choose the directory
 	 -- Do the same for {cmd::Cmder as Admin}
-         -- Click 'Save settings'
-        *- You may need to update 'Clink', run: 'clink update'
+	 -- Click 'Save settings'
+	*- You may need to update 'Clink', run: 'clink update'
+	*- To supress the warning about the absence of an unziping tool:
+	 -- Download '7zip' from here: https://www.7-zip.org/download.html
+	 -- Install it and add its path to the system environment variables
 
 2. Download msys
 	*- Download from here: https://www.msys2.org/
 	*- Install the program and open it
 	*- Type the following commands:
 	 -- pacman -Syu
-       	 -- pacman -Su
-         -- pacman -S mingw-w64-86_64-gcc
-         -- pacman -S mingw-w64-86_64-gdb
+	 -- pacman -Su
+	 -- pacman -S mingw-w64-86_64-gcc
+	 -- pacman -S mingw-w64-86_64-gdb
 
 	*- Add bin folder to system environment variables
 	*- Reopen the program or open the command promot
@@ -32,16 +35,16 @@ Setting up C development environement:
 	*- Download MinGW from here: https://sourceforge.net/projects/mingw/files/latest/download
 	*- Follow the instructions to install mingw-get and close the window
 	*- Add bin folder to system environment variables
-        *- Type in the command promot: mingw-get install mingw32-make
-        *- Locate the bin folder and rename "mingw32-make.exe" to "make.exe"
+	*- Type in the command promot: mingw-get install mingw32-make
+	*- Locate the bin folder and rename "mingw32-make.exe" to "make.exe"
 
-4. Download GitHub-CLI and Git setup
+4. Download GitHub CLI and Git setup
 	*- Git is already installed in the full version of cmder
 	*- Have your email loged-in in Chrome and type in cmder:
 	 -- git config --global user.name "Your username"
 	 -- git config --global user.email "Your email"
-        *- Then try any activity (like pushing) and setup Git.
-	*- Dowload GitHub-CLI from here: https://cli.github.com/
-	*- Install GitHub-CLI (the folder may be added automatically to system environment variables)
-        *- Clone Giter from https://github.com/OussamaTeyib/Giter.git
-        *- Add Giter to system environment variables
+	*- Then try any activity (like pushing) and setup Git.
+	*- Dowload GitHub CLI from here: https://cli.github.com/
+	*- Install GitHub CLI (the folder may be added automatically to system environment variables)
+	*- Clone Giter from https://github.com/OussamaTeyib/Giter.git
+	*- Add Giter to system environment variables
