@@ -1,4 +1,4 @@
-Setting-up C development environment:
+Setting-up C development environment in Windows:
 
 1. Download cmder
 	*- Download the full version from here: https://cmder.app/

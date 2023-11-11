@@ -1,0 +1,29 @@
+Setting-up C development environment in Android:
+
+1. Download cxxdroid:
+	*- Download the app from here: https://play.google.com/store/apps/details?id=ru.iiec.cxxdroid
+	*- Navigate to 'Settings > Appearance' and allow 'Dark theme' option
+	*- Navigate to 'Settings > Editor' and allow 'Preserve files on exit' option
+	*- Navigate to 'Settings > Editor' and allow 'Tab inserts spaces' option
+	*- Navigate to 'Settings > Editor' and edit new file template
+	*- Navigate to 'Settings > System' and disable 'Use C++ for new files' option
+	*- Navigate to 'Settings > System' and change C compiler arguments to '-Wall -Wextra -Werror -std=c2x'
+
+2. Download Github:
+	*- Download the app from here: https://play.google.com/store/apps/details?id=com.github.android
+	*- Log-in and open any code and click on 'Settings' symbol and:
+	 -- Disable 'Wrap lines' option
+	 -- Allow 'Override system font size' option
+
+3. Download termux:
+	*- Download the app from here: https://play.google.com/store/apps/details?id=com.termux
+	*- To access the phone's storage, run: termux-setup-storage
+	*- To change starup directory:
+	 -- Run: echo "cd storage/shared/<path>" >> ~/.bashrc
+	 -- Reopen 'termux' or run: source ~/.bashrc
+	*- Run: pkg update
+	*- Run: pkg upgrade
+	*- To install 'nano', run: pkg install nano
+	*- To clear the screen, run: clear
+	*- To install 'clang', run: pkg install clang
+	*- To install 'git', run: pkg install git
