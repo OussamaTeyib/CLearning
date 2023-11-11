@@ -46,5 +46,12 @@ Setting-up C development environment:
 	*- Then try any activity (like pushing) and setup Git.
 	*- Dowload GitHub CLI from here: https://cli.github.com/
 	*- Install GitHub CLI (the folder may be added automatically to system environment variables)
+	*- To allow GitHub CLI to delete repositories:
+	 -- Have your Github account logged-in in Edge (Or your default browser)
+	 -- Run: gh auth refresh -h github.com -s delete_repo
+	 -- Follow the instructions and copy the one-time code and put in the browser
+	 -- To delete a repo, run: gh repo delete <repo-name> --yes
+	*- To rename a repository using Github CLI:
+	 - Navigate to the repo's directory and run: gh repo rename <new_name>
 	*- Clone Giter from https://github.com/OussamaTeyib/Giter.git
 	*- Add Giter to system environment variables
