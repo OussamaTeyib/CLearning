@@ -1,4 +1,4 @@
-Setting up C development environement:
+Setting-up C development environment:
 
 1. Download cmder
 	*- Download the full version from here: https://cmder.app/
