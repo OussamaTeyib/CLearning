@@ -14,6 +14,7 @@ Setting-up C development environment in Windows:
 	*- To supress the warning about the absence of an unziping tool:
 	 -- Download '7zip' from here: https://www.7-zip.org/download.html
 	 -- Install it and add its path to the system environment variables
+	*- To support non-ASCII characters, run: chcp 1254
 
 2. Download msys
 	*- Download from here: https://www.msys2.org/
