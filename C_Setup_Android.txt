@@ -27,3 +27,15 @@ Setting-up C development environment in Android:
 	*- To clear the screen, run: clear
 	*- To install 'clang', run: pkg install clang
 	*- To install 'git', run: pkg install git
+	*- To Authenticate git:
+	 -- Open Github.com and Navigate to 'Settings > Developper settings'
+	 -- Choose 'Personal Access tokens' and then choose 'Tokens (classic)'
+	 -- Click on 'Generate new token' and then choose 'Generate new token (classic)'
+	 -- Add a note and select all 'scopes' specifically 'repo'
+	 -- Press 'Generate token' and copy the generated token
+	 -- Open termux and:
+	 -- run: git config --global credential.helper store
+	 -- run: git credential-store --file ~/.git-credentials store
+	 -- run: echo "https://<username>:<token>@github.com" > ~/.git-credentials
+	 -- run: git config --global user.name "Your userame"
+	 -- run: git config --global user.email "Your email"
